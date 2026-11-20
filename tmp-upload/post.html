@@ -1,7 +1,0 @@
-<!doctype html><meta charset="utf-8"><body>sending…<script>
-(async()=>{const base='https://raw.githubusercontent.com/kcl-RedForge/kcl-redforge.github.io/claude/project-thread-9qxt73/tmp-upload/';
-for(let i=1;i<=4;i++){const b=await (await fetch(base+'instagram-slide-'+i+'.png')).blob();
-const d=await new Promise(r=>{const f=new FileReader();f.onload=()=>r(f.result);f.readAsDataURL(b)});
-window.opener.postMessage({rfName:'s'+i,rfData:d},'https://www.instagram.com');}
-document.body.textContent='done';setTimeout(()=>window.close(),500);})();
-</script>
