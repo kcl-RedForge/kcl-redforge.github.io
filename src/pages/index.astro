@@ -148,9 +148,8 @@ const fig = (i: number) => String(i + 1).padStart(2, '0');
       <div class="prose apply-body"><apply.Content /></div>
       <dl class="apply-grid">
         <div><dt class="label">// Who</dt><dd class="title small">First year to PhD</dd></div>
-        <div><dt class="label">// Status</dt><dd class="title small">{site.applicationsOpen ? 'Always open' : 'Closed'}</dd></div>
-        {site.applicationsOpen && site.coreTeamDate && <div><dt class="label">// Core team</dt><dd class="title small">{site.coreTeamDate}</dd></div>}
-        {site.applicationsOpen && <div><dt class="label">// Review</dt><dd class="title small">{site.reviewCycle}</dd></div>}
+        <div><dt class="label">// Status</dt><dd class="title small">{site.applicationsOpen ? 'Open' : 'Closed'}</dd></div>
+        {site.applicationsOpen && site.cycleCloses && <div><dt class="label">// Next cycle closes</dt><dd class="title small">{site.cycleCloses}</dd></div>}
       </dl>
       {site.applicationsOpen
         ? <a class="btn btn-red btn-lg" href={site.applyUrl}>Apply to RedForge <span class="arrow">→</span></a>
