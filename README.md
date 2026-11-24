@@ -12,7 +12,7 @@ Everything you'd normally want to change is a small text file. Open it on GitHub
 | About text | `src/content/sections/about.md` |
 | Apply section text | `src/content/sections/apply.md` |
 | Sponsors text | `src/content/sections/sponsors.md` |
-| A project (ERC, Lunabotics, MachX) | `src/content/projects/*.md` |
+| A project (ERC, Lunabotics) | `src/content/projects/*.md` |
 | Add a team member | copy `src/content/team/_example.md` to `src/content/team/firstname-lastname.md` and fill it in |
 | Add a sponsor | copy `src/content/sponsors/_example.md` to `src/content/sponsors/company-name.md` |
 | Images | upload to `public/images/` and refer to them as `/images/name.jpg` |
