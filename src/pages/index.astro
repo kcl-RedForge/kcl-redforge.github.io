@@ -39,8 +39,8 @@ const fig = (i: number) => String(i + 1).padStart(2, '0');
       <Mark class="hero-mark" />
       <p class="label hero-kicker">King's College London</p>
       <h1 id="hero-title" class="wordmark hero-wordmark"><span class="sr-only">KCL </span>RedForge</h1>
-      <p class="label hero-comps">// ERC · Lunabotics · MachX</p>
-      <p class="hero-body">King's College London's elite student engineering team. A Mars rover, a lunar robot and a rocket, built by students.</p>
+      <p class="label hero-comps">// ERC · Lunabotics</p>
+      <p class="hero-body">King's College London's elite student engineering team. A Mars rover and a lunar robot, built by students.</p>
       <div class="hero-ctas">
         <a class="btn btn-red" href={site.applyUrl}>{site.applicationsOpen ? 'Apply now' : 'Applications closed'} <span class="arrow">→</span></a>
         <a class="btn btn-ghost" href="#projects">See the projects</a>
@@ -60,9 +60,9 @@ const fig = (i: number) => String(i + 1).padStart(2, '0');
         <div class="prose"><about.Content /></div>
       </div>
       <dl class="stats">
-        <div><dt class="label">Competitions</dt><dd class="stat">03</dd></div>
+        <div><dt class="label">Competitions</dt><dd class="stat">02</dd></div>
         <div><dt class="label">Rover mass</dt><dd class="stat">75<small>kg</small></dd></div>
-        <div><dt class="label">Rocket target altitude</dt><dd class="stat">2<small>km</small></dd></div>
+        <div><dt class="label">Lunabotics build cycle</dt><dd class="stat">1<small>yr</small></dd></div>
         <div><dt class="label">KCL Electronics makers</dt><dd class="stat">~130</dd></div>
       </dl>
     </div>
@@ -71,7 +71,7 @@ const fig = (i: number) => String(i + 1).padStart(2, '0');
   <!-- 02 PROJECTS -->
   <section class="section" id="projects" aria-labelledby="projects-title">
     <div class="wrap">
-      <SectionHead index="02" kicker="Projects" title="Three competitions" id="projects-title" />
+      <SectionHead index="02" kicker="Projects" title="Two competitions" id="projects-title" />
       <div class="projects">
         {projectsRendered.map((p, i) => (
           <article class="project" id={p.data.code.toLowerCase()}>

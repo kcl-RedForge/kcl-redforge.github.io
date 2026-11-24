@@ -7,7 +7,7 @@ import { url } from '../lib/url';
 interface Props { title?: string; description?: string }
 const {
   title = "KCL RedForge · King's College London student engineering team",
-  description = "KCL RedForge is King's College London's elite student engineering team, building a Mars rover, a lunar robot and a rocket for the European Rover Challenge, UK Lunabotics and MachX.",
+  description = "KCL RedForge is King's College London's elite student engineering team, building a Mars rover and a lunar robot for the European Rover Challenge and UK Lunabotics.",
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(url('og.png'), Astro.site);
