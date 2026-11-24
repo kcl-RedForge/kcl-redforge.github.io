@@ -1,0 +1,5 @@
+<!doctype html><html><body><p id="s">loading</p><script>
+(async()=>{const base='https://raw.githubusercontent.com/kcl-redforge/kcl-redforge.github.io/claude/project-thread-nfgqij/tmp-ig/';
+const out=[];for(const n of ['p1.png']){const b=await (await fetch(base+n)).blob();out.push(await new Promise(r=>{const f=new FileReader();f.onload=()=>r(f.result);f.readAsDataURL(b)}))}
+window.opener.postMessage({rfimgs:out},'*');document.getElementById('s').textContent='sent '+out.length;})();
+</script></body></html>
